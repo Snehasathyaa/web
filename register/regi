@@ -7,9 +7,7 @@
 		text-align:center;
 		font-size:25px;
                }
-	function myAlert() {
-  	alert("Successfully submitted");
-	}
+	
 </style> 
 <body>
 
@@ -61,16 +59,7 @@
 		<input type="text" name="course duration" size="25"/><br><br>
 
 
-		<!--<input type="button" value="submit"/>-->
-<!--<button onclick="myFunction()">submit</button>
-
-<script>
-function myFunction() {
-  alert("Successfully submitted!");
-}
-</script>-->
-
-		<button onclick="Alert()">submit</button>
+		<button onclick="Alert">submit</button>
 
                                                                                                                                                                                                                      
            
