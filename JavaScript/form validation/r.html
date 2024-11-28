@@ -2,70 +2,32 @@
 <head>
     <title>Sign UP</title>
     <style>
-        .h1 {
+          .h1 {
             text-align: center;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .form-wrapper {
             display: flex;
             justify-content: center; 
             align-items: center;     
-            min-height: 100vh;     
+            min-height: 100vh;       
         }
 
         .form-container {
             width: 100%;
-            max-width: 350px;
-            padding: 15px;
+            max-width: 400px;
+            padding: 20px;
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+	 .error {
+      color: red;
+      font-size: 12px;
+    }
 
-        label {
-            display: block;
-            margin-top: 8px;
-            font-weight: bold;
-	    font-size: 14px;
-        }
-
-        input[type="text"], input[type="password"], input[type="email"] {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 12px;
-	    box-sizing: border-box;
-        }
-
-        input[type="radio"] {
-            margin-right: 8px;
-        }
-
-        button {
-            margin-top: 15px;
-            width: 100%;
-            padding: 8px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .error {
-            color: red;
-            font-size: 12px;
-            margin-top: 3px;
-        }
 
     </style>
 </head>
@@ -76,46 +38,46 @@
         <h2 style="text-align: center;">Sign UP</h2>
         
         <form id="registrationForm">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName">
-            <span class="error" id="firstNameError"></span>
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br>
+            <span class="error" id="firstNameError"></span><br>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName">
-            <span class="error" id="lastNameError"></span>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName"><br>
+            <span class="error" id="lastNameError"></span><br>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
-            <span class="error" id="usernameError"></span>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <span class="error" id="usernameError"></span><br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-            <span class="error" id="passwordError"></span>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <span class="error" id="passwordError"></span><br>
 
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword">
-            <span class="error" id="confirmPasswordError"></span>
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword"><br>
+            <span class="error" id="confirmPasswordError"></span><br>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address">
-            <span class="error" id="addressError"></span>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            <span class="error" id="addressError"></span><br>
 
-            <label for="mobile">Mobile:</label>
-            <input type="text" id="mobile" name="mobile">
-            <span class="error" id="mobileError"></span>
+            <label for="mobile">Mobile:</label><br>
+            <input type="text" id="mobile" name="mobile"><br>
+            <span class="error" id="mobileError"></span><br>
 
             <!-- Gender Section -->
-            <label>Gender:</label>
+            <label>Gender:</label><br>
             <input type="radio" name="gender" value="male" id="male"> Male
             <input type="radio" name="gender" value="female" id="female"> Female
-            <input type="radio" name="gender" value="other" id="other"> Other
+            <input type="radio" name="gender" value="other" id="other"> Other<br>
             <span class="error" id="genderError"></span><br><br>
 
-            <label for="email">Email ID:</label>
-            <input type="email" id="email" name="email">
-            <span class="error" id="emailError"></span>
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <span class="error" id="emailError"></span><br>
 
-            <button type="button" onclick="validateForm()">Register</button>
+            <button type="button" onclick="validateForm()">Register</button><br>
         </form>
     </div>
 </div>
